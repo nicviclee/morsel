@@ -1,0 +1,55 @@
+crepes:
+  title: "Crepes"
+  content: "Some flour, water, eggs, and heat and you're good to go. Don't forget the delicious accompaniments"
+  created_at: <%= 10.minutes.ago %>
+  user: fake
+
+salad:
+  title: "Salad"
+  content: "Check out the recipe at allrecipes.com"
+  created_at: <%= 3.years.ago %>
+  user: fake
+
+pizza:
+  title: "Pizza"
+  content: "Throw some things onto the crust. It'll be good, trust me."
+  created_at: <%= 2.hours.ago %>
+  user: fake
+
+most_recent:
+  title: "Macarons"
+  content: "Surprised these turned out so good. Go to my blog for the full recipe."
+  created_at: <%= Time.zone.now %>
+  user: fake
+
+<% 30.times do |n| %>
+micropost_<%= n %>:
+  title: "My recipe"
+  content: <%= Faker::Lorem.sentence(5) %>
+  created_at: <%= 42.days.ago %>
+  user: fake
+<% end %>
+
+pie:
+  title: "Mom's famous pie"
+  content: "Apple and caramel pie. But I'm not allowed to share the recipe..."
+  created_at: <%= 2.years.ago %>
+  user: me
+
+pears:
+  title: "Fresh is best - pears"
+  content: "Just buy some pears. Or grow them."
+  created_at: <%= 3.days.ago %>
+  user: bear
+
+cheese:
+  title: "Cheese platter"
+  content: "Get some cheese and put it on a platter"
+  created_at: <%= 10.minutes.ago %>
+  user: rabbit
+
+steak:
+  title: "Ultra rare"
+  content: "Nice and blue"
+  created_at: <%= 4.hours.ago %>
+  user: me
